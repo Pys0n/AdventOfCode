@@ -25,8 +25,11 @@
 #
 # Given the recording in your puzzle input, what is the error-corrected version of the message being sent?
 
-with open('input6.txt', 'r', encoding='utf-8') as file:
+import os
+
+with open(os.path.abspath(__file__) + 'input6.txt', 'r', encoding='utf-8') as file:
     messages = file.read().strip().split('\n')
+
 
 def solve_part1(messages: list) -> str:
     appearences = [{} for _ in range(len(messages[0]))]

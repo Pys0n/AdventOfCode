@@ -36,8 +36,9 @@
 #
 # There seems to be an intermediate check of the voltage used by the display: after you swipe your card, if the screen did work, how many pixels should be lit?
 
+import os
 
-with open('input8.txt', 'r', encoding='utf-8') as file:
+with open(os.path.abspath(__file__) + 'input8.txt', 'r', encoding='utf-8') as file:
     operations = file.read().strip().split('\n')
 
 

@@ -24,8 +24,9 @@
 #
 # Your puzzle input is the instructions from the document you found at the front desk. What is the bathroom code?
 
+import os
 
-with open('input2.txt', 'r', encoding='utf-8') as file:
+with open(os.path.abspath(__file__) + 'input2.txt', 'r', encoding='utf-8') as file:
     instructions = file.read().strip().split('\n')
 
 

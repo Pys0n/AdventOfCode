@@ -13,10 +13,13 @@
 #
 # What is the sum of the sector IDs of the real rooms?
 
-with open('input4.txt', 'r', encoding='utf-8') as file:
+import os
+
+with open(os.path.abspath(__file__) + 'input4.txt', 'r', encoding='utf-8') as file:
     rooms = file.read().strip().split('\n')
 
 list_of_real_rooms = [] # part 2
+
 
 def solve_part1(rooms: list) -> int:
     global list_of_real_rooms # part 2

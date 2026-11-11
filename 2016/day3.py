@@ -9,7 +9,9 @@
 #
 # In your puzzle input, how many of the listed triangles are possible?
 
-with open('input3.txt', 'r', encoding='utf-8') as file:
+import os
+
+with open(os.path.abspath(__file__) + 'input3.txt', 'r', encoding='utf-8') as file:
     triangles = file.read().strip().split('\n')
 
 for i, triangle in enumerate(triangles):

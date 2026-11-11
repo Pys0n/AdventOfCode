@@ -23,6 +23,7 @@
 #
 # Based on your instructions, what is the number of the bot that is responsible for comparing value-61 microchips with value-17 microchips?
 
+import os
 
 class Bot:
     def __init__(self, low: tuple = (), high: tuple = ()) -> None:
@@ -61,7 +62,7 @@ class Bot:
         return True
 
 
-with open('input10.txt', 'r', encoding='utf-8') as file:
+with open(os.path.abspath(__file__) + 'input10.txt', 'r', encoding='utf-8') as file:
     instructions = file.read().strip().split('\n')
 
 

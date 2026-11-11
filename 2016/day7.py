@@ -11,7 +11,9 @@
 # ioxxoj[asdfgh]zxcvbn supports TLS (oxxo is outside square brackets, even though it's within a larger string).
 # How many IPs in your puzzle input support TLS?
 
-with open('input7.txt', 'r', encoding='utf-8') as file:
+import os
+
+with open(os.path.abspath(__file__) + 'input7.txt', 'r', encoding='utf-8') as file:
     ips = file.read().strip().split('\n')
 
 

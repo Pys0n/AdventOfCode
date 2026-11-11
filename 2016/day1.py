@@ -16,8 +16,9 @@
 # R5, L5, R5, R3 leaves you 12 blocks away.
 # How many blocks away is Easter Bunny HQ?
 
+import os
 
-with open('input1.txt', 'r', encoding='utf-8') as file:
+with open(os.path.abspath(__file__) + 'input1.txt', 'r', encoding='utf-8') as file:
     instructions = file.read().strip().split(', ')
 
 
