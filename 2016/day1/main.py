@@ -18,7 +18,7 @@
 
 import os
 
-with open(os.path.abspath(__file__) + 'input1.txt', 'r', encoding='utf-8') as file:
+with open(os.path.abspath(__file__) + 'input.txt', 'r', encoding='utf-8') as file:
     instructions = file.read().strip().split(', ')
 
 

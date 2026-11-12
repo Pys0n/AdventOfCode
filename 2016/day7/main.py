@@ -13,7 +13,7 @@
 
 import os
 
-with open(os.path.abspath(__file__) + 'input7.txt', 'r', encoding='utf-8') as file:
+with open(os.path.abspath(__file__) + 'input.txt', 'r', encoding='utf-8') as file:
     ips = file.read().strip().split('\n')
 
 

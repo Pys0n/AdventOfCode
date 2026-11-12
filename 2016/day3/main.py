@@ -11,7 +11,7 @@
 
 import os
 
-with open(os.path.abspath(__file__) + 'input3.txt', 'r', encoding='utf-8') as file:
+with open(os.path.abspath(__file__) + 'input.txt', 'r', encoding='utf-8') as file:
     triangles = file.read().strip().split('\n')
 
 for i, triangle in enumerate(triangles):
@@ -52,7 +52,7 @@ print('Possible Triangles:', solve(triangles)) # Solution: 982
 # In your puzzle input, and instead reading by columns, how many of the listed triangles are possible?
 
 
-with open('input3.txt', 'r', encoding='utf-8') as file:
+with open('input.txt', 'r', encoding='utf-8') as file:
     lines = file.readlines()
     triangles = [[] for _ in range(len(lines))]
     for i, line in enumerate(lines):
