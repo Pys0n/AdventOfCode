@@ -15,7 +15,7 @@
 
 import os
 
-with open(os.path.abspath(__file__) + 'input.txt', 'r', encoding='utf-8') as file:
+with open(os.path.dirname(os.path.abspath(__file__)) + '/input.txt', 'r', encoding='utf-8') as file:
     rooms = file.read().strip().split('\n')
 
 list_of_real_rooms = [] # part 2

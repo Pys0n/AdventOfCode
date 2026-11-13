@@ -38,7 +38,7 @@
 
 import os
 
-with open(os.path.abspath(__file__) + 'input.txt', 'r', encoding='utf-8') as file:
+with open(os.path.dirname(os.path.abspath(__file__)) + '/input.txt', 'r', encoding='utf-8') as file:
     operations = file.read().strip().split('\n')
 
 
